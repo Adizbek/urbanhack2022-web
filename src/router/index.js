@@ -1,10 +1,17 @@
 import {createRouter, createWebHistory} from 'vue-router';
-import RoadMap from "@/components/RoadMap";
 import TrafficLightPage from "@/views/TrafficLightPage";
+import RoadMapView from "@/views/RoadMapView";
+import RoadView from "@/views/RoadView";
 
 const routes = [
+    {
+        path: '/map',
+        component: RoadMapView,
+        children: [{
+            path: 'road', component: RoadView
+        }]
+    },
     {path: '/tl/:id', component: TrafficLightPage},
-    {path: '/', component: RoadMap},
 ]
 
 // 3. Create the router instance and pass the `routes` option

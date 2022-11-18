@@ -26,7 +26,6 @@ import {computed, ref} from 'vue'
 import TfSign from "@/components/tf/TfSign";
 import Modes from "@/components/tf/Modes";
 
-
 export default {
   name: "TrafficLight",
 
@@ -121,11 +120,23 @@ html, body {
 .tf {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .tf .text {
   line-height: 0;
   padding-top: 50%;
+}
+
+.tf.tiny {
+  border-radius: 20px;
+  border: 6px solid #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.tf.tiny > .tf {
+  font-size: 100px !important;
 }
 
 .tf > .tf {

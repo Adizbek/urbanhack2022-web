@@ -28,6 +28,6 @@ export default {
 }
 
 .sign img {
-  width: 100vw;
+  width: 70%;
 }
 </style>
