@@ -24,7 +24,7 @@
         </td>
         <td align="center">
           <div class="road-cell" style="transform: rotate(-90deg) translateY(-100px);">
-            <traffic-light class="tiny" :instructions="getInstructions['2']" :force="getForce['2']"/>
+            <traffic-light class="tiny" :instructions="getInstructions['4']" :force="getForce['4']"/>
           </div>
         </td>
       </tr>
@@ -32,7 +32,7 @@
         <td></td>
         <td align="center">
           <div class="road-cell" style="transform: translateY(-50px)">
-            <traffic-light class="tiny" :instructions="getInstructions['1']" :force="getForce['1']"/>
+            <traffic-light class="tiny" :instructions="getInstructions['3']" :force="getForce['3']"/>
           </div>
         </td>
         <td></td>
